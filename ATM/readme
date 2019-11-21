@@ -1,0 +1,6 @@
+1.No extra dependencies required.
+2. The program can be compiled and run on eclipse or intellij. Import this as a java project
+3. Runner.java is the the runner code.
+4. Any invalid special keystrokes like (return key, space, delete) has been ignored deliberately. The program will check for the validaity of options only in case of valid Integers only.
+5. The tests are present under com.atm.unittests
+6. Single threaded non DB application 
