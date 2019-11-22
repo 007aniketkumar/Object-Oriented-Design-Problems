@@ -46,13 +46,42 @@ public class Entry {
 
         Ticket parkingTicket = new Ticket();
         parkingTicket.setEntryTime(System.currentTimeMillis());
-        parkingTicket.setParkingLevelID();//check the capacity if the current level and then allow accordingly.
 
-        //from the vehicle take the type of vehicle to find the static and dynamic contexts
+        //from the vehicle take the type of vehicle to find the capacity and allot accordingly.
 
         String vehicleType = vehicle.getVehicleType();
 
-        if(VehicleAttributes.)
+        String vehicleCapacity = VehicleAttributes.valueOf(vehicleType).getCapacity());
+
+        int parkingLevel = canAllocate(vehicleCapacity)
+        parkingTicket.setParkingLevelID();//check the capacity if the current level and then allow accordingly.
+
+    }
+
+
+
+
+    /*
+
+        This function checks if the vehicle can be allocated in the current parking level,
+        if not it allocates based on
+        the next available level.
+
+        If no levels are left, it returns -1 , signalling that the capacity is full.
+
+     */
+    private int canAllocate(String vehicleCapacity){
+
+
+    }
+
+
+    /*
+
+
+
+     */
+    private void updateStats() {
 
     }
 
