@@ -1,0 +1,16 @@
+Steps to compile and run
+To install all dependencies, compile and run tests:
+$ bin/setup
+To run the code so it accepts input from a file:
+$ bin/parking_lot file_inputs.txt
+
+Some Design Considerations :
+--------------------------
+1. The parking lot is generic enough to accept Vehicle of any type. The design is open for extension.
+2. Since, level is not defined in the problem /input , default level 1 is being passed. The design ofcourse supports multilevel parking, where each parking level has its own parking spots and capacity.
+3. The design supports parking spot of various kinds, which is open for extension.
+4. Since, the size or performance of parking lot has not been clearly defined in the problem, I have provided DataScale Strategies. Based on the desired space and time complexities appropriate choice can be made.
+5. Parking strategy has been selected as NearestSlotFirst , i.e. the closest slot from the entry will be allocated . This again , can be extended further, based on requirements, without making any change in the exisiting design.
+6. Code coverage report can be checked here - parking_lot/build/reports/tests/test/packages/parkinglot.html
+7. Gradle has been used for project dependencies.
+8. Gradle version-4 and above has been considered for this project.
