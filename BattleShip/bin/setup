@@ -1,0 +1,11 @@
+# Add script to:
+# * Install dependencies
+# * Build/Compile
+# * Run Test Suit to validate
+#
+# After this is run, bin/battleship_game
+# should Just Work
+gradle wrapper
+BASEDIR=$(dirname "$0")
+$BASEDIR/../gradlew build
+

@@ -1,0 +1,7 @@
+
+# Add script to run program here.
+# Complete bin/setup so that after it is
+# run, bin/battleship_game can be used to launch
+# it.
+BASEDIR=$(dirname "$0")
+java -jar $BASEDIR/../build/libs/BattleShip.jar
